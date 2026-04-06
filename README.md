@@ -37,6 +37,9 @@ Using a computational simulation, this project models planetary habitability and
 ### Factor Breakdown
 ![Factor Comparison](assets/Graph2.png)
 
+### Mars Habitability Evolution
+![Evolution Graph](assets/Graph3.png)
+
 ---
 
 ## ⚠️ Scientific Note
