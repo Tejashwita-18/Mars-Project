@@ -49,6 +49,7 @@ It is a **conceptual and exploratory simulation**, designed to investigate hypot
 ## 🛠️ Tech Stack
 - Python 🐍  
 - Matplotlib 📊  
+- Numpy 🔢
 
 ---
 
