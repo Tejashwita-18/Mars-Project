@@ -2,6 +2,7 @@ from planet_data import mars, earth, ancient_mars
 from scoring import habitability_score
 from simulation import migration_analysis
 from visualization import plot_scores, plot_factor_comparison
+from time_evolution import simulate_mars_evolution, plot_evolution
 
 def get_user_inputs():
     print("=== CUSTOMIZE ANCIENT MARS CONDITIONS ===")
@@ -52,3 +53,12 @@ print(migration_analysis(mars_score, earth_score))
 
 plot_scores(mars_score, earth_score, mars_data["name"])
 plot_factor_comparison(mars_details, earth_details, mars_data["name"])
+
+print("\n=== MARS TIME EVOLUTION ===\n")
+
+results = simulate_mars_evolution()
+
+for time, score in results:
+    print(f"{time}: {score}/10")
+
+plot_evolution(results)
