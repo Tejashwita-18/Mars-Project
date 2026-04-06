@@ -32,10 +32,10 @@ Using a computational simulation, this project models planetary habitability and
 ## 📊 Example Output
 
 ### Habitability Comparison
-![Habitability Graph](assets/graph1.png)
+![Habitability Graph](assets/Graph1.png)
 
 ### Factor Breakdown
-![Factor Comparison](assets/graph2.png)
+![Factor Comparison](assets/Graph2.png)
 
 ---
 
