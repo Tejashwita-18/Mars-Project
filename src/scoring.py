@@ -16,6 +16,13 @@ def habitability_score(planet):
     else:
         details["oxygen"] = "low"
 
+    # co2
+    if 0.01 <= planet["co2"] <= 1:
+        score += 2
+        details["co2"] = "balanced"
+    else:
+        details["co2"] = "too high/low"
+
     # water
     if planet["water"] > 0.5:
         score += 2

@@ -21,10 +21,10 @@ def plot_factor_comparison(mars_details, earth_details, mars_name="Mars"):
 
     factors = list(mars_details.keys())
 
-    mars_values = [1 if v in ["suitable", "sufficient", "available", "protective", "stable"] else 0
+    mars_values = [1 if v in ["suitable", "sufficient", "balanced", "available", "protective", "stable"] else 0
                    for v in mars_details.values()]
     
-    earth_values = [1 if v in ["suitable", "sufficient", "available", "protective", "stable"] else 0
+    earth_values = [1 if v in ["suitable", "sufficient", "balanced", "available", "protective", "stable"] else 0
                     for v in earth_details.values()]
     
     # make Mars values visible even if 0

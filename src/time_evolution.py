@@ -7,6 +7,7 @@ mars_timeline = [
         "time" : "4B years ago",
         "temperature" : 20,
         "oxygen" : 5,
+        "co2" : 20,
         "water" : 0.9,
         "magnetic_field" : 0.9,
         "gravity" : 3.7
@@ -15,6 +16,7 @@ mars_timeline = [
         "time" : "3B years ago",
         "temperature" : 10,
         "oxygen" : 3,
+        "co2" : 40,
         "water" : 0.7,
         "magnetic_field" : 0.7,
         "gravity" : 3.7
@@ -23,6 +25,7 @@ mars_timeline = [
         "time" : "2B years ago",
         "temperature" : -10,
         "oxygen" : 1,
+        "co2" : 70,
         "water" : 0.4,
         "magnetic_field" : 0.3,
         "gravity" : 3.7
@@ -31,6 +34,7 @@ mars_timeline = [
         "time" : "Present",
         "temperature" : -60,
         "oxygen" : 0.13, 
+        "co2" : 95,
         "water" : 0.2,
         "magnetic_field" : 0.1,
         "gravity" : 3.7
