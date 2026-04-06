@@ -1,0 +1,29 @@
+{
+  "earth": {
+    "name" : "Earth",
+    "temperature": 15,
+    "oxygen": 21,
+    "co2" : 0.04,
+    "water": 1.0,
+    "magnetic_field": 1.0,
+    "gravity": 9.8
+  },
+  "mars_present": {
+    "name" : "Mars",
+    "temperature": -60,
+    "oxygen": 0.13,
+    "co2" : 95,
+    "water": 0.2,
+    "magnetic_field": 0.1,
+    "gravity": 3.7
+  },
+  "mars_ancient": {
+    "name": "Ancient Mars",
+    "temperature": 10,
+    "oxygen": 5,
+    "co2": 80,
+    "water": 0.7,
+    "magnetic_field": 0.8,
+    "gravity": 3.7
+  }
+}
