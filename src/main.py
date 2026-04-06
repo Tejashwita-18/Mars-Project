@@ -1,5 +1,5 @@
 from data_loader import load_planet_date
-from scoring import habitability_score
+from scoring import habitability_score, weights
 from simulation import migration_analysis
 from visualization import plot_scores, plot_factor_comparison
 from time_evolution import simulate_mars_evolution, plot_evolution
@@ -42,9 +42,24 @@ def safe_input(prompt, min_val, max_val):
         return (min_val + max_val) / 2
     return value
 
+def interpret_score(percent):
+    if percent >= 75:
+        return "Highly Habitable"
+    elif percent >= 40:
+        return "Moderately Habitable"
+    else:
+        return "Not Habitable"
 
+print("\n=== HABITABILITY SCORES ===\n")
 mars_score, mars_details = habitability_score(mars)
 earth_score, earth_details = habitability_score(earth)
+
+max_score = sum(weights.values())
+mars_score_percent = (mars_score/max_score) * 100
+earth_score_percent = (earth_score/max_score) * 100
+
+print(f"Mars: {mars_score_percent:.1f}% -> {interpret_score(mars_score_percent)}")
+print(f"Earth: {earth_score_percent:.1f}% -> {interpret_score(earth_score_percent)}")
 
 print("=== PRINT SIMULATION RESULT ===\n")
 print(f"{mars_data["name"]} Score: {mars_score}/10")

@@ -62,7 +62,7 @@ def plot_evolution(results):
     plt.xlabel("Time")
     plt.ylabel("Habitability Score")
 
-    plt.ylim(0, 10)
+    plt.ylim(0, 12)
 
     for i,v in enumerate(scores):
         plt.text(i, v + 0.2, str(v), ha="center")
